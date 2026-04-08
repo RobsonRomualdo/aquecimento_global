@@ -1,0 +1,12 @@
+Header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 50px 0 50px;
+  border: 1px solid black;
+}
+
+Header img {
+  display: flex;
+  width: 100px;
+}
