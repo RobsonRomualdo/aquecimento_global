@@ -2,11 +2,19 @@ Header {
   display: flex;
   width: 100%;
   justify-content: center;
-  padding: 50px 0 50px;
+  align-items: center;
+  padding: 20px 0px;
   border: 1px solid black;
 }
 
 Header img {
   display: flex;
   width: 100px;
+}
+
+Header li {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  width: 80%;
 }
