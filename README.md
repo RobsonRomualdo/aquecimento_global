@@ -1,18 +1,15 @@
-# React + Vite
+# Tutorial de como dar seu primeiro commit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Links vídeos tutoriais:
 
-Currently, two official plugins are available:
+- Instalação do Git e do GitHub Desktop
+https://youtu.be/NgWExh3bswg?si=mhW6PcTnV3G63tYF
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Primeiro repositorio
+https://youtu.be/P0Hvrf8T3zo?si=3cxeJDHXv3FEK_ch
 
-## React Compiler
+- Como gereciar o repositorio
+https://youtu.be/Sbcu_GuySjo?si=LK2Im4uA_9CrMI4R
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
-
-Note: This will impact Vite dev & build performances.
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Aprenda git do zero - Dev Kipper (para qm quiser saber mais)
+https://youtu.be/pyM5QLS2h6M?si=gJE7B8Ix_Naooamn
