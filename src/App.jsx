@@ -1,6 +1,5 @@
 import Header from './components/header.jsx'
 import './css/index.css'
-import Botao from './components/botao.jsx'
 
 function App() {
 
@@ -8,7 +7,6 @@ function App() {
     <>
       <Header />
       <h1>React App</h1>
-      <Botao />
     </>
   )
 }
