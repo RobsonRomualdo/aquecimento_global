@@ -1,15 +1,16 @@
-
+import {Link, NavLink} from 'react-router-dom';
+import '../css/index.css'
 
 function Header() {
     return (
         <header>
             <img id="teste" src="/src/images/global-warming.png" alt="Global Warming" />
-            <li>
-                <ul>Home</ul>
-                <ul>Blog</ul>
-                <ul>Fale conosco</ul>
-                <ul>Conversor</ul>
-            </li>
+            <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/blog">Blog</Link></li>
+                <li><Link to="/conversor">Conversor</Link></li>
+                <li><Link to="/faleconosco">Fale conosco</Link></li>
+            </ul>
         </header>
     )
 }
