@@ -1,8 +1,8 @@
 import {Routes, Route} from 'react-router-dom';
 import Home from '../pages/home';
 import Blog from '../pages/blog';
-import FaleConosco from '../pages/conversor';
-import Conversor from '../pages/faleconosco';
+import FaleConosco from '../pages/faleconosco';
+import Conversor from '../pages/conversor';
 
 function AppRoutes() {
     return (
