@@ -1,13 +1,11 @@
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 function FaleConosco() {
     return (
         <>
             <Header/>
-            <div>
-                <h1>Fale conosco</h1>
-            </div>
-            
+            <Footer/>
         </>
     )
 }
