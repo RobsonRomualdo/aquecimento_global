@@ -4,7 +4,7 @@ import '../css/index.css'
 function Header() {
     return (
         <header>
-            <img id="teste" src="/src/images/global-warming.png" alt="Global Warming" />
+            <img src="/src/images/global-warming.png" alt="Global Warming" />
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/blog">Blog</Link></li>
