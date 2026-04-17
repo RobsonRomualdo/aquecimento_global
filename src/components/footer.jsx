@@ -1,7 +1,4 @@
 import { Box, AppBar, Toolbar, Typography, Stack, IconButton } from '@mui/material';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function Footer() {
     return (
@@ -18,7 +15,7 @@ function Footer() {
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", flexDirection: "column", alignItems: "center"}}>
                     <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
-                        © 2024 Global Warming. 
+                        © 2026 Global Warming. 
                     </Typography>
                     <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
                         Todos os direitos reservados. Protótipo para Fins Educativos.
