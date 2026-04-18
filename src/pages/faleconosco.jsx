@@ -3,7 +3,7 @@ import Footer from "../components/footer"
 
 function FaleConosco() {
     return (
-        <>
+        <> 
             <Header/>
             <Footer/>
         </>
