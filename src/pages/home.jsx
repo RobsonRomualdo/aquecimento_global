@@ -1,9 +1,12 @@
 import Header from "../components/header"
-import '../css/index.css'
+import Footer from "../components/footer"
 
 function Home() {
     return (
-            <Header />
+        <>
+            <Header/>
+            <Footer/>
+        </>
     )
 }
 
