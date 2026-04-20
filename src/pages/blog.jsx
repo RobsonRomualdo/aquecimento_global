@@ -1,12 +1,11 @@
 import Header from "../components/header"
+import Footer from "../components/footer"
 
 function Blog() {
     return (
         <>
-        <Header/>
-        <div>
-            <h1>Blog</h1>
-        </div>
+            <Header/>
+            <Footer/>
         </>
         
     )
