@@ -7,7 +7,6 @@ function Blog() {
             <Header/>
             <Footer/>
         </>
-        
     )
 }
 

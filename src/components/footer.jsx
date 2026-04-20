@@ -1,11 +1,11 @@
-import { Box, AppBar, Toolbar, Typography, Stack, IconButton } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 function Footer() {
     return (
         
-            <AppBar component="footer" position="fixed" sx={{width: '100%', height: '127px', top: 'auto', bottom: 0, backgroundColor: '#0F172A' }}>
+            <Box component="footer" sx={{width: '100%', height: '127px',left: 0, bottom: 0, backgroundColor: '#0F172A', display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", color:"#ffffff"}}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px"}}>
-                    <img src='/src/images/terra.png' alt="terra" />
+                    <Box component="img" src='/src/images/terra.png' alt="terra" sx={{width:"40px"}}/>
                     <Typography variant="h6" component="h6" sx={{ fontWeight: "700", fontSize: "16px"}}>
                         Global Warming
                     </Typography>
@@ -21,8 +21,7 @@ function Footer() {
                         Todos os direitos reservados. Protótipo para Fins Educativos.
                     </Typography>
                 </Box>
-            </AppBar>
-        
+            </Box>
     )
 }
 
