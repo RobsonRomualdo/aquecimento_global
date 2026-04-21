@@ -26,3 +26,5 @@ Para ninguém trabalhar direto na `main` (o que é perigoso!), você deve defini
 `'feature' é uma nova funcionalidade no código. Use quando for fazer diferença real`
 
 `'bugfix' é correção de erro/bug no código`
+
+### EM BREVE: **ISSUES**
