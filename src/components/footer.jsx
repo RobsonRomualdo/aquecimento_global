@@ -1,9 +1,21 @@
 import { Box, Typography } from '@mui/material';
 
 function Footer() {
-    return (
-        
-            <Box component="footer" sx={{mt:"auto", width: '100%', height: '127px', backgroundColor: '#0F172A', display:"flex", justifyContent:"center", alignItems:"center", flexDirection:"column", color:"#ffffff"}}>
+
+    const footerStyle = {
+        mt:"auto",
+        width: "100%",
+        height: "127px",
+        backgroundColor: "#0F172A",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+        color: "#ffffff"
+    };
+
+    return (                     
+            <Box component="footer" sx={footerStyle}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px"}}>
                     <Box component="img" src='/src/images/terra.png' alt="terra" sx={{width:"40px"}}/>
                     <Typography variant="h6" component="h6" sx={{ fontWeight: "700", fontSize: "16px"}}>
