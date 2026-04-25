@@ -24,7 +24,7 @@ function ArticleCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button size="small" sx={{textTransform:"none", color:"#059568", fontSize:"12px"}}>
+                <Button href={props.link} size="small" sx={{textTransform:"none", color:"#059568", fontSize:"12px"}}>
                     Ler mais
                 </Button>
             </CardActions>
