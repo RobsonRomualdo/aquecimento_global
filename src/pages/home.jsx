@@ -7,6 +7,7 @@ function Home() {
         <>
             <Header/>
             <Footer/>
+            <button>a</button>
             <ADrawer/>
         </>
     )
