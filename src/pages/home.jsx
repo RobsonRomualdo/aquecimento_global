@@ -7,6 +7,11 @@ function Home() {
         <>
             <Header/>
             <Footer/>
+<<<<<<< Updated upstream
+=======
+            <button>a</button>
+            <input type="text" />
+>>>>>>> Stashed changes
             <ADrawer/>
         </>
     )
