@@ -55,7 +55,7 @@ function Blog() {
                         materia="AR"
                         corMateria="#e6b990"
                         data="12 Abr, 2024"
-                        titulo="Poluição do ar causa milhões de mortes precoces e afeta todo globo."
+                        titulo="Poluição do ar causa milhões de mortes precoces."
                         descricao="A poluição do ar continua a ser uma ameaça global persistente, com consequências severas para a saúde humana, o ambiente e as economias. "
                     />
                 </Box>

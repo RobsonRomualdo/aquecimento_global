@@ -26,11 +26,9 @@ function Footer() {
                 <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "16px", marginBottom: "12px"}}>
                     Promovendo a conscientização ambiental através da informação.
                 </Typography>
-                <Box sx={{ display: "flex", flexDirection: "column", flexDirection: "column", alignItems: "center"}}>
-                    <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
-                        © 2026 Global Warming. 
-                    </Typography>
-                </Box>
+                <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
+                    © 2026 Global Warming. 
+                </Typography>
             </Box>
 
     )
