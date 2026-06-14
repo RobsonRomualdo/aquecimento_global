@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import logoIMG from '../images/terra.png'
 
 function Footer() {
 
@@ -17,7 +18,7 @@ function Footer() {
     return (                     
             <Box component="footer" sx={footerStyle}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "6px"}}>
-                    <Box component="img" src='/src/images/terra.png' alt="terra" sx={{width:"40px"}}/>
+                    <Box component="img" src={logoIMG} alt="terra" sx={{width:"40px"}}/>
                     <Typography variant="h6" component="h6" sx={{ fontWeight: "700", fontSize: "16px"}}>
                         Global Warming
                     </Typography>
@@ -28,9 +29,6 @@ function Footer() {
                 <Box sx={{ display: "flex", flexDirection: "column", flexDirection: "column", alignItems: "center"}}>
                     <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
                         © 2026 Global Warming. 
-                    </Typography>
-                    <Typography variant="p" component="p" sx={{ fontWeight: "light", fontSize: "12px"}}>
-                        Todos os direitos reservados. Protótipo para Fins Educativos.
                     </Typography>
                 </Box>
             </Box>

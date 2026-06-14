@@ -5,7 +5,7 @@ function ArticleCard(props) {
         
         <Card sx={{ width: "686px", ...props.sx}}>
             <CardActionArea>
-                <CardMedia sx={{backgroundColor: "red"}}
+                <CardMedia
                     component="img"
                     height="180"
                     image={props.imagem}
@@ -13,7 +13,7 @@ function ArticleCard(props) {
                 />
                 <CardContent>
                     <Typography component="p" sx={{display:"flex", alignItems:"center", gap:"10px", fontSize:"12px", fontWeight:"600", color:props.corMateria}}>
-                        {props.materia} <Box sx={{fontSize:"10px", fontWeight:"300", color:"#929292"}}>{props.data}</Box>
+                        {props.materia} <Typography component="span" sx={{fontSize:"10px", fontWeight:"300", color:"#929292"}}>{props.data}</Typography>
                     </Typography>
                     <Typography gutterBottom variant="h5" component="div" sx={{fontSize:"24px"}}>
                         {props.titulo}
@@ -24,7 +24,7 @@ function ArticleCard(props) {
                 </CardContent>
             </CardActionArea>
             <CardActions>
-                <Button href={props.link} size="small" sx={{textTransform:"none", color:"#059568", fontSize:"12px"}}>
+                <Button href={props.link} size="small" target='_blank' sx={{textTransform:"none", color:"#059568", fontSize:"12px"}}>
                     Ler mais
                 </Button>
             </CardActions>
