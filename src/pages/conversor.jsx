@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Header from "../components/header";
 import Footer from "../components/footer";
 import ADrawer from "../components/drawer";
@@ -14,6 +16,56 @@ import {
 } from "@mui/material";
 
 function Conversor() {
+  const [tipoConversao, setTipoConversao] = useState("cf");
+  const [valor, setValor] = useState("");
+  const [resultado, setResultado] = useState("");
+  const [erro, setErro] = useState(false);
+
+  function converterTemperatura() {
+    if (valor.trim() === "") {
+      setErro(true);
+      setResultado("Digite um valor");
+      return;
+    }
+
+    if (isNaN(valor)) {
+      setErro(true);
+      setResultado("Valor inválido");
+      return;
+    }
+
+    setErro(false);
+
+    const numero = Number(valor);
+
+    let resultadoFinal;
+
+    switch (tipoConversao) {
+      case "cf":
+        resultadoFinal = (numero * 9) / 5 + 32;
+        setResultado(`${resultadoFinal.toFixed(2)} °F`);
+        break;
+
+      case "fc":
+        resultadoFinal = ((numero - 32) * 5) / 9;
+        setResultado(`${resultadoFinal.toFixed(2)} °C`);
+        break;
+
+      case "ck":
+        resultadoFinal = numero + 273.15;
+        setResultado(`${resultadoFinal.toFixed(2)} K`);
+        break;
+
+      case "kc":
+        resultadoFinal = numero - 273.15;
+        setResultado(`${resultadoFinal.toFixed(2)} °C`);
+        break;
+
+      default:
+        setResultado("Erro");
+    }
+  }
+
   return (
     <>
       <Header />
@@ -38,7 +90,6 @@ function Conversor() {
             boxShadow: "0px 10px 30px rgba(0,0,0,0.12)",
           }}
         >
-          {/* Ícones */}
           <Box
             sx={{
               display: "flex",
@@ -93,7 +144,6 @@ function Conversor() {
             </Box>
           </Box>
 
-          {/* Título */}
           <Typography
             sx={{
               textAlign: "center",
@@ -117,7 +167,6 @@ function Conversor() {
             Escolha a direção da conversão e informe o valor.
           </Typography>
 
-          {/* Tipo de conversão */}
           <Typography
             sx={{
               fontSize: "20px",
@@ -134,7 +183,10 @@ function Conversor() {
               marginBottom: "35px",
             }}
           >
-            <Select defaultValue="cf">
+            <Select
+              value={tipoConversao}
+              onChange={(e) => setTipoConversao(e.target.value)}
+            >
               <MenuItem value="cf">
                 Celsius para Fahrenheit (°C → °F)
               </MenuItem>
@@ -153,7 +205,6 @@ function Conversor() {
             </Select>
           </FormControl>
 
-          {/* Campo valor */}
           <Typography
             sx={{
               fontSize: "20px",
@@ -167,13 +218,21 @@ function Conversor() {
           <TextField
             fullWidth
             placeholder="Ex: 50"
-            type="number"
+            value={valor}
+            onChange={(e) => {
+              setValor(e.target.value);
+
+              if (erro) {
+                setErro(false);
+              }
+            }}
+            error={erro}
+            helperText={erro ? "Digite apenas números válidos." : ""}
             sx={{
               marginBottom: "35px",
             }}
           />
 
-          {/* Botão */}
           <Box
             sx={{
               marginBottom: "35px",
@@ -184,10 +243,10 @@ function Conversor() {
               width="100%"
               height="55px"
               borderRadius="12px"
+              onClick={converterTemperatura}
             />
           </Box>
 
-          {/* Resultado */}
           <Card
             sx={{
               backgroundColor: "#EFEFEF",
@@ -216,7 +275,7 @@ function Conversor() {
                 color: "#059568",
               }}
             >
-              32°F
+              {resultado || "--"}
             </Typography>
           </Card>
         </Card>
