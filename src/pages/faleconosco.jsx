@@ -4,8 +4,13 @@ import ADrawer from "../components/drawer"
 
 function FaleConosco() {
     return (
-        <> 
+        <>
             <Header/>
+
+            <main>
+                <h1>Contato</h1>
+            </main>
+
             <Footer/>
             <ADrawer/>
         </>
