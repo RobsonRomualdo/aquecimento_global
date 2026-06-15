@@ -1,9 +1,45 @@
 import Button from '@mui/material/Button';
 
+function AButton({
+    texto,
+    backgroundColor = "#059568",
+    color = "#FFFFFF",
+    width = "160px",
+    height = "50px",
+    borderRadius = "80px",
+    fontSize = "18px",
+    fontWeight = "bold",
+    sx,
+    ...rest
+}) {
 
-function AButton({texto, backgroundColor="#059568", color="#FFFFFF", width="160px", height="50px", borderRadius="80px", fontSize="18px", fontWeight="bold", sx, ...rest}) {
-    return(
-        <Button {...rest} sx={{backgroundColor: backgroundColor, color: color, width: width, height: height, borderRadius: borderRadius, fontSize: fontSize, fontWeight: fontWeight, textTransform: "none", ...sx}}>
+    return (
+        <Button
+            {...rest}
+
+            sx={{
+                backgroundColor: backgroundColor,
+                color: color,
+
+                width: width,
+                height: height,
+
+                borderRadius: borderRadius,
+
+                fontFamily: "Inter, sans-serif",
+
+                fontSize: fontSize,
+                fontWeight: fontWeight,
+
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+
+                textTransform: "none",
+
+                ...sx
+            }}
+        >
             {texto}
         </Button>
     )
