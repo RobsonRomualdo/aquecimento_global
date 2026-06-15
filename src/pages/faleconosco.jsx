@@ -5,11 +5,13 @@ import "../css/faleconosco.css"
 import AButton from "../components/aButton"
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined'
+import Mensagem from "../components/msgAlert"
 
 function FaleConosco() {
     function enviarFormulario(event) {
         event.preventDefault()
         event.target.reset()
+        Mensagem.sucesso('Sua mensagem foi enviada com sucesso!')
     }
     return (
         <>
