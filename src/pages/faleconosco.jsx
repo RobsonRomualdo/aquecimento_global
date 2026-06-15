@@ -3,9 +3,14 @@ import Footer from "../components/footer"
 import ADrawer from "../components/drawer"
 import "../css/faleconosco.css"
 import AButton from "../components/aButton"
-import { EnvelopeSimple, MapPin } from "phosphor-react"
+import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined'
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined'
 
 function FaleConosco() {
+    function enviarFormulario(event) {
+        event.preventDefault()
+        event.target.reset()
+    }
     return (
         <>
             <Header/>
@@ -24,21 +29,21 @@ function FaleConosco() {
                         <div className="contato-detalhes">
                             <p>
                                 <div className="icone-contato">
-                                    <EnvelopeSimple size={19.5} weight="regular" />
+                                    <EmailOutlinedIcon sx={{ fontSize: 20 }} />
                                 </div>
                                 gwarming@gmail.com
                             </p>
 
                             <p>
                                 <div className="icone-contato">
-                                    <MapPin size={21} weight="regular" />
+                                    <LocationOnOutlinedIcon sx={{ fontSize: 21 }} />
                                 </div>
                                 Brasil
                             </p>
                         </div>
                     </div>
 
-                    <form className="contato-form">
+                    <form className="contato-form" onSubmit={enviarFormulario}>
                         <div className="input-duplo">
                             <div className="campo">
                                 <label>Seu nome</label>
