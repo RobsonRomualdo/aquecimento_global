@@ -1,0 +1,130 @@
+.contato-container{
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+}
+
+.contato-box{
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    min-height: 600px;
+}
+
+.contato-info{
+    width: 360px;
+    height: 650px;
+    background: #047857;
+    color: white;
+    padding: 42px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.contato-info h1{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+.contato-info > p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 120%;
+    max-width: 270px;
+    margin-bottom: 44px;
+}
+
+.contato-detalhes{
+    width: 303px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contato-detalhes p{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.icone-contato{
+    width: 35px;
+    height: 35px;
+    border-radius: 9px;
+    background: #059568;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-shrink: 0;
+}
+
+.contato-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 56px 48px;
+    width: 65%;
+    align-items: flex-start;
+}
+
+.input-duplo{
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-duplo input{
+    width: 100%;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+.campo label{
+    font-size: 16px;
+    color: #555;
+    font-weight: 500;
+}
+
+.contato-form input,
+.contato-form textarea{
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.contato-form textarea{
+    height: 220px;
+    resize: none;
+}
+
+.contato-form > input,
+.contato-form textarea{
+    width: 100%;
+}
+
+.contato-form button{
+    margin-top: 10px;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+}
