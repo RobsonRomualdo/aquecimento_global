@@ -16,7 +16,7 @@ import {
   CardContent
 } from "@mui/material";
 
-import planetaIMG from "../images/aquecimento-global.jpg";
+import planetaIMG from "../images/planeta.jpg";
 
 function Home() {
   return (
