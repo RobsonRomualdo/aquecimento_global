@@ -6,6 +6,7 @@ import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import BasicCard from "../components/basicCard";
 import { Link } from "react-router-dom";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
+import ADrawer from "../components/drawer";
 
 import {
   Box,
@@ -188,6 +189,7 @@ function Home() {
 </Box> 
 
       <Footer />
+      <ADrawer />
     </>
   );
 }
