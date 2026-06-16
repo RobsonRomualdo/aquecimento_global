@@ -26,10 +26,6 @@ function Blog() {
                     
                 </Box>
 
-                <Box sx={{margin:"0 auto"}}>
-                    
-                </Box>
-
                 <Box sx={{display:"flex", width:"calc(100% - 48px)", justifyContent:"center", gap:"20px", margin:"76px auto"}}>
                     <ArticleCard
                         imagem="https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2025/05/22124520/energia-solar-620x620.jpeg"
