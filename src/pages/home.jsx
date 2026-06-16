@@ -98,21 +98,20 @@ function Home() {
           />
           </Box>
 <Box
-   sx={{
-    display: "grid",
-    gridTemplateColumns: {
-      xs: "1fr",
-      md: "repeat(2, 1fr)",
-    },
+    sx={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
     gap: "35px",
-    justifyItems: "center",
-    mt: 8,
+    marginTop: "80px",
+    flexWrap: "wrap",
   }}
 >
 <BasicCard
     icone={<HelpOutlineOutlinedIcon/>}
     titulo="O que é?"
-    texto="O aquecimento global é o aumento da temperatura média da Terra causado principalmente pela emissão excessiva de gases de efeito estufa. Esse fenômeno provoca mudanças climáticas, eventos extremos e impactos significativos nos ecossistemas e na vida humana."
+    texto="O aquecimento global é o aumento da temperatura média da Terra causado pelo excesso de gases de efeito estufa."
+    textoCompleto="Esse fenômeno provoca mudanças climáticas, eventos extremos e impactos significativos nos ecossistemas e na vida humana."
     backgroundColorIcon="#dbeafe"
     colorIcon="#2563eb"
     sx={{
@@ -148,7 +147,7 @@ function Home() {
   <BasicCard
     icone={<WarningAmberOutlinedIcon />}
     titulo="Consequências"
-    texto="Eventos climáticos extremos, aumento do nível do mar e perda de biodiversidade."
+    texto="Mudanças climáticas que provocam eventos extremos, aumento do mar e perda de biodiversidade."
     textoCompleto="O aumento dos gases de efeito estufa eleva a temperatura global, acelerando o derretimento das calotas polares e o consequente aumento do nível do mar. Esse ciclo de aquecimento altera os ecossistemas, causando a perda de biodiversidade e impulsionando eventos climáticos extremos, como secas, tempestades e ondas de calor."
     backgroundColorIcon="#fee2e2"
     colorIcon="#ef4444"
@@ -166,7 +165,8 @@ function Home() {
   <BasicCard
     icone={<CheckOutlinedIcon />}
     titulo="Soluções"
-    texto="Energias renováveis, economia circular e reflorestamento são os caminhos necessários."
+    texto="Energias renováveis, economia circular e reflorestamento.
+    Formam a base da transformação ecológica."
     textoCompleto="Com a crescente urgência climática, a combinação de energias renováveis, economia circular e reflorestamento é fundamental para transitar rumo a um modelo de desenvolvimento sustentável. Esses três pilares atuam em sinergia para mitigar os impactos ambientais e regenerar o planeta:
      Energias Renováveis 
      Economia Circular 
