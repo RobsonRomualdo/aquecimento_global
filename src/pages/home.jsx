@@ -5,6 +5,7 @@ import WarningAmberOutlinedIcon from "@mui/icons-material/WarningAmberOutlined";
 import CheckOutlinedIcon from "@mui/icons-material/CheckOutlined";
 import BasicCard from "../components/basicCard";
 import { Link } from "react-router-dom";
+import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 
 import {
   Box,
@@ -97,14 +98,35 @@ function Home() {
           />
           </Box>
 <Box
-  sx={{
-    display: "flex",
-    justifyContent: "center",
+   sx={{
+    display: "grid",
+    gridTemplateColumns: {
+      xs: "1fr",
+      md: "repeat(2, 1fr)",
+    },
     gap: "35px",
-    marginTop: "80px",
-    flexWrap: "wrap",
+    justifyItems: "center",
+    mt: 8,
   }}
 >
+<BasicCard
+    icone={<HelpOutlineOutlinedIcon/>}
+    titulo="O que é?"
+    texto="O aquecimento global é o aumento da temperatura média da Terra causado principalmente pela emissão excessiva de gases de efeito estufa. Esse fenômeno provoca mudanças climáticas, eventos extremos e impactos significativos nos ecossistemas e na vida humana."
+    backgroundColorIcon="#dbeafe"
+    colorIcon="#2563eb"
+    sx={{
+    transition: "all 0.3s ease",
+    cursor: "pointer",
+    "&:hover": {
+      transform: "scale(1.1)",
+      backgroundColor: "#f0f9ff",
+       },
+     
+    }}
+  />
+
+
   <BasicCard
     icone={<InfoOutlinedIcon />}
     titulo="Causas"
