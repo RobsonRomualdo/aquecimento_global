@@ -13,8 +13,7 @@ function BasicCard(props) {
   return (
     <Card
       sx={{
-        width: "333px",
-        minHeight: "235px",
+        width: "280px",
         backgroundColor: "#ffffff",
         borderRadius: "8px",
         transition: "0.3s",

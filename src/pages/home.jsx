@@ -98,21 +98,20 @@ function Home() {
           />
           </Box>
 <Box
-   sx={{
-    display: "grid",
-    gridTemplateColumns: {
-      xs: "1fr",
-      md: "repeat(2, 1fr)",
-    },
+    sx={{
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-start",
     gap: "35px",
-    justifyItems: "center",
-    mt: 8,
+    marginTop: "80px",
+    flexWrap: "wrap",
   }}
 >
 <BasicCard
     icone={<HelpOutlineOutlinedIcon/>}
     titulo="O que é?"
-    texto="O aquecimento global é o aumento da temperatura média da Terra causado principalmente pela emissão excessiva de gases de efeito estufa. Esse fenômeno provoca mudanças climáticas, eventos extremos e impactos significativos nos ecossistemas e na vida humana."
+    texto="O aquecimento global é o aumento da temperatura média da Terra causado pelo excesso de gases de efeito estufa."
+    textoCompleto="Esse fenômeno provoca mudanças climáticas, eventos extremos e impactos significativos nos ecossistemas e na vida humana."
     backgroundColorIcon="#dbeafe"
     colorIcon="#2563eb"
     sx={{
