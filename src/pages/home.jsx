@@ -147,7 +147,7 @@ function Home() {
   <BasicCard
     icone={<WarningAmberOutlinedIcon />}
     titulo="Consequências"
-    texto="Eventos climáticos extremos, aumento do nível do mar e perda de biodiversidade."
+    texto="Mudanças climáticas que provocam eventos extremos, aumento do mar e perda de biodiversidade."
     textoCompleto="O aumento dos gases de efeito estufa eleva a temperatura global, acelerando o derretimento das calotas polares e o consequente aumento do nível do mar. Esse ciclo de aquecimento altera os ecossistemas, causando a perda de biodiversidade e impulsionando eventos climáticos extremos, como secas, tempestades e ondas de calor."
     backgroundColorIcon="#fee2e2"
     colorIcon="#ef4444"
@@ -165,7 +165,8 @@ function Home() {
   <BasicCard
     icone={<CheckOutlinedIcon />}
     titulo="Soluções"
-    texto="Energias renováveis, economia circular e reflorestamento são os caminhos necessários."
+    texto="Energias renováveis, economia circular e reflorestamento.
+    Formam a base da transformação ecológica."
     textoCompleto="Com a crescente urgência climática, a combinação de energias renováveis, economia circular e reflorestamento é fundamental para transitar rumo a um modelo de desenvolvimento sustentável. Esses três pilares atuam em sinergia para mitigar os impactos ambientais e regenerar o planeta:
      Energias Renováveis 
      Economia Circular 
