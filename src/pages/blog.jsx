@@ -36,7 +36,7 @@ function Blog() {
                         link="https://jornaldebrasilia.com.br/brasil-7/energia-solar-como-funciona-e-quais-os-beneficios-dessa-fonte-sustentavel/"
                         materia="ENERGIA"
                         corMateria="#059568"
-                        data="20 de setembro de 2023"
+                        data="22 Maio, 2025"
                         titulo="Como funciona e quais os benefícios dessa fonte sustentável"
                         descricao="A energia solar tem se consolidado como uma das principais alternativas sustentáveis para a geração de eletricidade no mundo."
                     />
@@ -45,16 +45,16 @@ function Blog() {
                         link="https://nautica.com.br/dia-do-oceano-voce-sabe-qual-e-o-oceano-mais-antigo-da-terra/"
                         materia="OCEANOS"
                         corMateria="#0077B6"
-                        data="12 Abr, 2024"
+                        data="08 Jun, 2023"
                         titulo="Você sabe qual é o oceano mais antigo da Terra?"
                         descricao="Um levantamento da Administração Nacional Oceânica e Atmosférica dos EUA (NOAA) respondeu a essa pergunta."
                     />
                     <ArticleCard
                         imagem={poluicaoAr}
-                        link="https://nautica.com.br/dia-do-oceano-voce-sabe-qual-e-o-oceano-mais-antigo-da-terra/"
+                        link="https://altb.org.br/nuvem-de-fumaca/?gad_source=1&gad_campaignid=22289073053&gbraid=0AAAAA-1lrAeU6mObYac1a1NRzkIqadUC7&gclid=CjwKCAjw6MPRBhBTEiwAd-7Mr7gyvj9x60o0XXV1upch5-NIKm7T1dK7eVOsHBql84zHAXNxjhvi7hoCsqwQAvD_BwE"
                         materia="AR"
                         corMateria="#e6b990"
-                        data="12 Abr, 2024"
+                        data="02 Dez, 2024"
                         titulo="Poluição do ar causa milhões de mortes precoces."
                         descricao="A poluição do ar continua a ser uma ameaça global persistente, com consequências severas para a saúde humana, o ambiente e as economias. "
                     />
